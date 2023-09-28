@@ -49,7 +49,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\icon_about.png" />
+	  <None Remove="Resources\Images\icon_notes.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="PostSharp" Version="2023.0.8" />
+		<PackageReference Include="Syncfusion.Maui.Calendar" Version="23.1.38" />
+		<PackageReference Include="Syncfusion.Maui.Core" Version="23.1.38" />
+		<PackageReference Include="Syncfusion.Maui.Scheduler" Version="23.1.38" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="AboutPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

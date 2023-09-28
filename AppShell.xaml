@@ -6,9 +6,16 @@
     xmlns:local="clr-namespace:Accipere"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+            Title="Schemaläggare"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Icon="{OnPlatform 'icon_notes.png'}" />
+
+        <ShellContent
+            Title="Om"
+            ContentTemplate="{DataTemplate local:AboutPage}"
+            Icon="{OnPlatform 'icon_about.png'}" />
+    </TabBar>
 
 </Shell>

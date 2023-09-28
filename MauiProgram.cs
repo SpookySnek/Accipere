@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Syncfusion.Maui.Core.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace Accipere
 {
@@ -7,6 +8,7 @@ namespace Accipere
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
+            builder.ConfigureSyncfusionCore();
             builder
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
